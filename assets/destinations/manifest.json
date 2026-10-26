@@ -1,0 +1,405 @@
+{
+  "source": "dataset/source/attractions.json",
+  "sourceSha256": "dd2e1f1f31355174cbe7f273745483badd0c206eac5f065c02670a5452e0a120",
+  "preparedOn": "2026-10-24",
+  "processing": "Center crop to 640x360 JPEG quality82; only downloaded source photos, no generated scenes",
+  "rightsStatus": "Source credits retained; redistribution rights not independently verified",
+  "photos": [
+    {
+      "city": "Changhua County",
+      "attractionId": "Attraction_376470000A_000004",
+      "attractionName": "八卦山大佛風景區",
+      "slug": "changhua_county",
+      "imageSource": {
+        "Name": "八卦山大佛風景區",
+        "Description": "八卦山大佛風景區",
+        "URL": "https://tourism.chcg.gov.tw/upload/27/2025042314275293709.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 4303881,
+      "asset": "assets/destinations/changhua_county.jpg",
+      "thumbnailBytes": 98916,
+      "thumbnailSha256": "11d4ab8ea5743a75ddcb37f34f209636a9712f2a81df406b6330a822475591f3"
+    },
+    {
+      "city": "Chiayi City",
+      "attractionId": "Attraction_345040000G_100034",
+      "attractionName": "阿里山林業村暨檜意森活村",
+      "slug": "chiayi_city",
+      "imageSource": {
+        "Name": "檜意森活村全覽圖",
+        "Description": "照片提供｜嘉義分署",
+        "URL": "https://recreation.forest.gov.tw/Files/Forestry/CP/photo/album/0900021/01_BASE_01.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 483706,
+      "asset": "assets/destinations/chiayi_city.jpg",
+      "thumbnailBytes": 75352,
+      "thumbnailSha256": "be3c813dc6e57d1b4aeb1fcce456317861141b178a2c4a58044b9dbcdbfc415d"
+    },
+    {
+      "city": "Chiayi County",
+      "attractionId": "Attraction_345040000G_000012",
+      "attractionName": "阿里山國家森林遊樂區",
+      "slug": "chiayi_county",
+      "imageSource": {
+        "Name": "祝山車站",
+        "Description": "照片提供｜嘉義分署",
+        "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0500001/0500001202510230.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 417037,
+      "asset": "assets/destinations/chiayi_county.jpg",
+      "thumbnailBytes": 67028,
+      "thumbnailSha256": "f232ffcadc36eec56221ddb19d59779fa35284abbf40ceadf1fbdc6c459382b0"
+    },
+    {
+      "city": "Hsinchu City",
+      "attractionId": "Attraction_376580000A_000029",
+      "attractionName": "迎曦門(東門城)",
+      "slug": "hsinchu_city",
+      "imageSource": {
+        "Name": "迎曦門(東門城)",
+        "Description": null,
+        "URL": "https://hsinchuemap.tw/XmlImages/景點/018_迎曦門(東門城)/01.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 98024,
+      "asset": "assets/destinations/hsinchu_city.jpg",
+      "thumbnailBytes": 42279,
+      "thumbnailSha256": "22af9fbf8d2752b71a5034fa9859ac259260eafebea0012122738b15f765e9a6"
+    },
+    {
+      "city": "Hsinchu County",
+      "attractionId": "Attraction_376440000A_000323",
+      "attractionName": "內灣老街",
+      "slug": "hsinchu_county",
+      "imageSource": {
+        "Name": "內灣老街",
+        "Description": null,
+        "URL": "https://travel.hsinchu.gov.tw/admin/Content/Upload/image/20250220/db244947-5a09-4976-a81c-4864147ff653.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 1029168,
+      "asset": "assets/destinations/hsinchu_county.jpg",
+      "thumbnailBytes": 79018,
+      "thumbnailSha256": "8f47d4fb7143ea9388f05a080241ce202a37f70ce90880187df83d60800fe598"
+    },
+    {
+      "city": "Hualien County",
+      "attractionId": "Attraction_376550000A_001176",
+      "attractionName": "清水斷崖",
+      "slug": "hualien_county",
+      "imageSource": {
+        "Name": "清水斷崖",
+        "Description": null,
+        "URL": "https://hualien.travel/_api/content/images/attractions/1156/640x480_attractions-image-sahjq_o980qnh6ngdndu8g.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 67151,
+      "asset": "assets/destinations/hualien_county.jpg",
+      "thumbnailBytes": 56229,
+      "thumbnailSha256": "11768535d5e699beff3d61bd6dda5ca036335e4c6ac82602db0a9542aa33e646"
+    },
+    {
+      "city": "Kaohsiung City",
+      "slug": "kaohsiung_city",
+      "attractionId": "Attraction_A15010900H_000037",
+      "attractionName": "十八羅漢山",
+      "imageSource": {
+        "Name": "十八羅漢山",
+        "Description": null,
+        "URL": "https://www.maolin-nsa.gov.tw/_api/content/images/attractions/34507/640x480_attractions-image-v6vtsz5ylkmcsidzqvsylq.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 60085,
+      "asset": "assets/destinations/kaohsiung_city.jpg",
+      "thumbnailBytes": 56930,
+      "thumbnailSha256": "7684133275e7b7132818e5443d63ed3c5942e8ea43a13a25ca4bbcef9601123c"
+    },
+    {
+      "city": "Keelung City",
+      "attractionId": "Attraction_376570000A_000052",
+      "attractionName": "正濱漁港色彩屋",
+      "slug": "keelung_city",
+      "imageSource": {
+        "Name": "場地夕陽空景照",
+        "Description": null,
+        "URL": "https://klctb-ws.klcg.gov.tw/001/Upload/tour/445/12546/423/pic/0b800ea8-0e06-4c68-80f2-12e9ad8c4d04.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 679813,
+      "asset": "assets/destinations/keelung_city.jpg",
+      "thumbnailBytes": 47324,
+      "thumbnailSha256": "b5a895cb5741e2683b4e4552a8a504e95d5f1e801ea29bcb31d2aa647e7085b9"
+    },
+    {
+      "city": "Kinmen County",
+      "attractionId": "Attraction_371020000A_000389",
+      "attractionName": "莒光樓",
+      "slug": "kinmen_county",
+      "imageSource": {
+        "Name": "莒光樓",
+        "Description": null,
+        "URL": "https://kinmen.travel/image/9600/640x480",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 106284,
+      "asset": "assets/destinations/kinmen_county.jpg",
+      "thumbnailBytes": 86177,
+      "thumbnailSha256": "b06b5c03664e25f571e66b9657ca6228c14ee4065c06a9bad48371ab44b7d558"
+    },
+    {
+      "city": "Lienchiang County (Matsu)",
+      "attractionId": "Attraction_A15010500H_002711",
+      "attractionName": "芹壁聚落",
+      "slug": "lienchiang_county_matsu",
+      "imageSource": {
+        "Name": "芹壁聚落",
+        "Description": null,
+        "URL": "https://www.matsu-nsa.gov.tw/api/uploads/attractions/1f2704c92d5c4758a5615e111a3bd40f.jpg",
+        "Width": 1280,
+        "Height": 960,
+        "Keywords": []
+      },
+      "bytes": 260782,
+      "asset": "assets/destinations/lienchiang_county_matsu.jpg",
+      "thumbnailBytes": 53429,
+      "thumbnailSha256": "6b4eff486720e27d09806a378f4e4af9fa5afa71de8b71f970f2831b59914545"
+    },
+    {
+      "city": "Miaoli County",
+      "attractionId": "Attraction_376450000A_000985",
+      "attractionName": "鯉魚潭水庫",
+      "slug": "miaoli_county",
+      "imageSource": {
+        "Name": "鯉魚潭水庫",
+        "Description": "鯉魚潭水庫",
+        "URL": "https://www.miaolitravel.net/pic.ashx?qp=pic/12005173.jpg&sizetype=2",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 478762,
+      "asset": "assets/destinations/miaoli_county.jpg",
+      "thumbnailBytes": 47941,
+      "thumbnailSha256": "433d467c092fdff514c0120a2138f06ab7b1744886a9bb062fbbfda7c398b7ba"
+    },
+    {
+      "city": "Nantou County",
+      "attractionId": "Attraction_A15010600H_000018",
+      "attractionName": "日月潭自行車道-向山段",
+      "slug": "nantou_county",
+      "imageSource": {
+        "Name": "向山自行車道",
+        "Description": "",
+        "URL": "https://www.sunmoonlake.gov.tw/fapi/Image?type=Attraction&id=89&refid=18&l=1&w=0&h=0",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 142103,
+      "asset": "assets/destinations/nantou_county.jpg",
+      "thumbnailBytes": 51772,
+      "thumbnailSha256": "d6be2e802c1ba734bfec76fb929ffc6922798270aa481f267501cb1d61ee541f"
+    },
+    {
+      "city": "New Taipei City",
+      "attractionId": "Attraction_382000000A_109735",
+      "attractionName": "野柳地質公園",
+      "slug": "new_taipei_city",
+      "imageSource": {
+        "Name": "野柳地質公園",
+        "Description": null,
+        "URL": "https://newtaipei.travel/image/25139/640x480",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 74778,
+      "asset": "assets/destinations/new_taipei_city.jpg",
+      "thumbnailBytes": 65483,
+      "thumbnailSha256": "9c03efe52e6f8d2f3e1801f961e5d55806a3623d7595ca34f184db71bd92abb9"
+    },
+    {
+      "city": "Penghu County",
+      "attractionId": "Attraction_A15010200H_000069",
+      "attractionName": "吉貝沙尾",
+      "slug": "penghu_county",
+      "imageSource": {
+        "Name": "吉貝沙尾",
+        "Description": null,
+        "URL": "https://www.penghu-nsa.gov.tw/FileDownload/TravelInformation/NotSet/20230208144940275428.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 1619190,
+      "asset": "assets/destinations/penghu_county.jpg",
+      "thumbnailBytes": 25602,
+      "thumbnailSha256": "31e4d604b0e9207ae7c4f99ce90a669846723f88443af0a3b8e35b087f721503"
+    },
+    {
+      "city": "Pingtung County",
+      "attractionId": "Attraction_345040000G_000014",
+      "attractionName": "墾丁國家森林遊樂區",
+      "slug": "pingtung_county",
+      "imageSource": {
+        "Name": "墾丁國家森林遊樂區海景",
+        "Description": "照片提供｜屏東分署",
+        "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0600002/160054.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 235371,
+      "asset": "assets/destinations/pingtung_county.jpg",
+      "thumbnailBytes": 30484,
+      "thumbnailSha256": "d0dbb61b4c8c1613e96f95c3aa674bf4026195ee85aedf537c35f718fd97af83"
+    },
+    {
+      "city": "Taichung City",
+      "attractionId": "Attraction_387000000A_000942",
+      "attractionName": "臺中國家歌劇院",
+      "slug": "taichung_city",
+      "imageSource": {
+        "Name": "臺中國家歌劇院",
+        "Description": null,
+        "URL": "https://travel.taichung.gov.tw/content/images/attractions/24379/640x480_image636446329449094547.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 88400,
+      "asset": "assets/destinations/taichung_city.jpg",
+      "thumbnailBytes": 63507,
+      "thumbnailSha256": "8ff924f85419dee2c852a5f6f026bfad53848548ee61d9ea3ade1052d17340dd"
+    },
+    {
+      "city": "Tainan City",
+      "attractionId": "Attraction_395000000A_000671",
+      "attractionName": "安平古堡",
+      "slug": "tainan_city",
+      "imageSource": {
+        "Name": "安平古堡",
+        "Description": null,
+        "URL": "https://www.twtainan.net/image/17447/640x480",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 77471,
+      "asset": "assets/destinations/tainan_city.jpg",
+      "thumbnailBytes": 68790,
+      "thumbnailSha256": "d5e02384bec177423913f38912a19ba6db499f8e268dd4c28a800667e6ae24a7"
+    },
+    {
+      "city": "Taipei City",
+      "attractionId": "Attraction_379000000A_000217",
+      "attractionName": "台北101",
+      "slug": "taipei_city",
+      "imageSource": {
+        "Name": "夜晚台北燈火通明",
+        "Description": null,
+        "URL": "https://www.travel.taipei/content/images/attractions/573623/640x480_attractions-image-lyeij6n1v02fakfltov6oq.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 444407,
+      "asset": "assets/destinations/taipei_city.jpg",
+      "thumbnailBytes": 76581,
+      "thumbnailSha256": "05cf4670e886445aca38013769e1cec8be36a77accbf19288ae47a26c57fe3df"
+    },
+    {
+      "city": "Taitung County",
+      "attractionId": "Attraction_376540000A_000333",
+      "attractionName": "三仙台風景區",
+      "slug": "taitung_county",
+      "imageSource": {
+        "Name": "三仙台風景區",
+        "Description": null,
+        "URL": "https://tour.taitung.gov.tw/image/26551/640x480",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 51239,
+      "asset": "assets/destinations/taitung_county.jpg",
+      "thumbnailBytes": 41453,
+      "thumbnailSha256": "f792a28f7dc06c8e645e1624da751095657a71cdf44133445f5835acd863c139"
+    },
+    {
+      "city": "Taoyuan City",
+      "attractionId": "Attraction_345040000G_000006",
+      "attractionName": "拉拉山國家森林遊樂區",
+      "slug": "taoyuan_city",
+      "imageSource": {
+        "Name": "拉拉山雪景",
+        "Description": "照片提供｜新竹分署",
+        "URL": "https://recreation.forest.gov.tw/Files/Forest/RA/photo/album/0200005/0200005202302150.JPG",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 332176,
+      "asset": "assets/destinations/taoyuan_city.jpg",
+      "thumbnailBytes": 79592,
+      "thumbnailSha256": "903e0f176a5c1bbaab2521526c1f0c464a734cdbce6b6cd89d6e74aa512260be"
+    },
+    {
+      "city": "Yilan County",
+      "attractionId": "Attraction_376420000A_000321",
+      "attractionName": "蘭陽博物館",
+      "slug": "yilan_county",
+      "imageSource": {
+        "Name": "蘭陽博物館",
+        "Description": null,
+        "URL": "https://travel.yilan.gov.tw/_api/content/images/attractions/23922/640x480_attractions-image-hkovag-b4uu2w6ejmwbqvq.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 847649,
+      "asset": "assets/destinations/yilan_county.jpg",
+      "thumbnailBytes": 47211,
+      "thumbnailSha256": "959aab53d0b50d4fe59b19d03083fa03a5ad688016e8f1989ff0fac2aeef8de2"
+    },
+    {
+      "city": "Yunlin County",
+      "slug": "yunlin_county",
+      "attractionId": "Attraction_A25000000E_000036",
+      "attractionName": "雲林布袋戲館",
+      "imageSource": {
+        "Name": "1",
+        "Description": null,
+        "URL": "https://map.culture.tw/com/upload/baseImage/2025-01-09/e6093205-729f-47ff-98eb-fce7ba442e19/1.jpg",
+        "Width": null,
+        "Height": null,
+        "Keywords": []
+      },
+      "bytes": 3074536,
+      "asset": "assets/destinations/yunlin_county.jpg",
+      "thumbnailBytes": 54896,
+      "thumbnailSha256": "80b91df01169cf852f2b7041c5787b466dddb5c4f9181c10cb9d92163d7f7874"
+    }
+  ]
+}

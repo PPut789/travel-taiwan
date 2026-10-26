@@ -1,0 +1,21 @@
+{
+  "files.exclude": {
+    "**/.codex_run": true,
+    "**/.dart_tool": true,
+    "**/__pycache__": true,
+    "**/build": true,
+    "**/node_modules": true
+  },
+  "search.exclude": {
+    "**/.codex_run": true,
+    "**/.dart_tool": true,
+    "**/__pycache__": true,
+    "**/build": true,
+    "**/node_modules": true
+  },
+  "dart.flutterSdkPath": "C:/flutter/flutter",
+  "dart.lineLength": 80,
+  "editor.rulers": [
+    80
+  ]
+}

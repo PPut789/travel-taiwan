@@ -1,0 +1,136 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function validVideoData(data, videoId) {
+      return data.keys().hasAll([
+          'videoUrl',
+          'storagePath',
+          'caption',
+          'placeMode',
+          'attractionId',
+          'attractionSourceId',
+          'attractionName',
+          'province',
+          'region',
+          'googleMapsUrl',
+          'uploadedByUid',
+          'uploadedByName',
+          'uploadedByEmail',
+          'uploadedByPhotoUrl',
+          'status',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.keys().hasOnly([
+          'videoUrl',
+          'storagePath',
+          'caption',
+          'placeMode',
+          'attractionId',
+          'attractionSourceId',
+          'attractionName',
+          'province',
+          'region',
+          'googleMapsUrl',
+          'uploadedByUid',
+          'uploadedByName',
+          'uploadedByEmail',
+          'uploadedByPhotoUrl',
+          'status',
+          'createdAt',
+          'updatedAt'
+        ])
+        && data.videoUrl is string
+        && data.videoUrl.matches('https://firebasestorage.googleapis.com/.*')
+        && data.storagePath == 'user_videos/' + request.auth.uid + '/' + videoId + '.mp4'
+        && data.caption is string
+        && data.caption.size() <= 500
+        && data.placeMode in ['attraction', 'google_maps']
+        && data.attractionId is string
+        && data.attractionSourceId is string
+        && data.attractionName is string
+        && data.attractionName.size() > 0
+        && data.attractionName.size() <= 200
+        && data.province is string
+        && data.region is string
+        && data.googleMapsUrl is string
+        && data.googleMapsUrl.size() <= 2048
+        && data.uploadedByUid == request.auth.uid
+        && data.uploadedByName is string
+        && data.uploadedByName.size() > 0
+        && data.uploadedByName.size() <= 100
+        && data.uploadedByEmail is string
+        && data.uploadedByEmail.size() <= 320
+        && (
+          !data.keys().hasAny(['uploadedByPhotoUrl'])
+          || (data.uploadedByPhotoUrl is string
+            && data.uploadedByPhotoUrl.size() <= 2048)
+        )
+        && data.status == 'published'
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        && (
+          (data.placeMode == 'attraction'
+            && data.attractionId.size() > 0
+            && data.googleMapsUrl == '')
+          ||
+          (data.placeMode == 'google_maps'
+            && data.attractionId == ''
+            && data.googleMapsUrl.matches('https://.*'))
+        );
+    }
+
+    match /catalog_metadata/{catalogId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    match /attractions/{attractionId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    match /videos/{videoId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn()
+        && validVideoData(request.resource.data, videoId);
+      allow update: if isSignedIn()
+        && resource.data.uploadedByUid == request.auth.uid
+        && validVideoData(request.resource.data, videoId)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'caption',
+          'placeMode',
+          'attractionId',
+          'attractionSourceId',
+          'attractionName',
+          'province',
+          'region',
+          'googleMapsUrl',
+          'updatedAt'
+        ]);
+      allow delete: if isSignedIn()
+        && resource.data.uploadedByUid == request.auth.uid;
+    }
+
+    match /users/{userId} {
+      allow read, create, update, delete: if isOwner(userId);
+
+      match /history/{historyId} {
+        allow read, create, update, delete: if isOwner(userId);
+      }
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

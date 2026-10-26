@@ -1,0 +1,47 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    match /attraction_videos/{videoFile} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    match /attraction_images/{documentId}/{imageFile} {
+      allow read: if isSignedIn();
+      // The attraction catalog is managed by trusted import/admin tools only.
+      allow write: if false;
+    }
+
+    match /user_videos/{userId}/{videoFile} {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId)
+        && videoFile.matches('^[A-Za-z0-9_-]+[.]mp4$')
+        && request.resource.size > 0
+        && request.resource.size < 100 * 1024 * 1024
+        && request.resource.contentType == 'video/mp4';
+      allow delete: if isOwner(userId);
+    }
+
+    match /profile_images/{userId}/avatar.jpg {
+      allow read: if isSignedIn();
+      allow create, update: if isOwner(userId)
+        && request.resource.size > 0
+        && request.resource.size < 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+      allow delete: if isOwner(userId);
+    }
+
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

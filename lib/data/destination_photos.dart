@@ -1,0 +1,26 @@
+// Photos selected from the owner's Taiwan catalog. See assets/destinations/manifest.json.
+const destinationPhotos = <String, String>{
+  'Changhua County': 'assets/destinations/changhua_county.jpg',
+  'Chiayi City': 'assets/destinations/chiayi_city.jpg',
+  'Chiayi County': 'assets/destinations/chiayi_county.jpg',
+  'Hsinchu City': 'assets/destinations/hsinchu_city.jpg',
+  'Hsinchu County': 'assets/destinations/hsinchu_county.jpg',
+  'Hualien County': 'assets/destinations/hualien_county.jpg',
+  'Kaohsiung City': 'assets/destinations/kaohsiung_city.jpg',
+  'Keelung City': 'assets/destinations/keelung_city.jpg',
+  'Kinmen County': 'assets/destinations/kinmen_county.jpg',
+  'Lienchiang County (Matsu)':
+      'assets/destinations/lienchiang_county_matsu.jpg',
+  'Miaoli County': 'assets/destinations/miaoli_county.jpg',
+  'Nantou County': 'assets/destinations/nantou_county.jpg',
+  'New Taipei City': 'assets/destinations/new_taipei_city.jpg',
+  'Penghu County': 'assets/destinations/penghu_county.jpg',
+  'Pingtung County': 'assets/destinations/pingtung_county.jpg',
+  'Taichung City': 'assets/destinations/taichung_city.jpg',
+  'Tainan City': 'assets/destinations/tainan_city.jpg',
+  'Taipei City': 'assets/destinations/taipei_city.jpg',
+  'Taitung County': 'assets/destinations/taitung_county.jpg',
+  'Taoyuan City': 'assets/destinations/taoyuan_city.jpg',
+  'Yilan County': 'assets/destinations/yilan_county.jpg',
+  'Yunlin County': 'assets/destinations/yunlin_county.jpg',
+};
